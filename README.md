@@ -1,27 +1,27 @@
-# 📘 Library & Task Manager CRUD Projects
+# 📚 Library Management Database
 
-## 📌 Description
+## 📋 Project Description
 
-This repository contains two projects:
+The **Library Management Database** is a MySQL-based relational database designed to manage library resources efficiently. It tracks members, authors, books, and borrowing records, supporting key functionalities like book tracking, author management, and borrowing history. The schema uses multiple tables to capture relationships between members, books, and authors.
 
-### ✅ Question 1: Library Management Database (MySQL)
+## 🗂️ Database Schema
 
-A well-structured SQL database designed to manage books, members, authors, and borrowing history in a library.
+The database includes the following tables:
 
-### ✅ Question 2: Task Manager CRUD API (FastAPI + MySQL)
+1. **Members** - Stores information about library members.
+2. **Authors** - Stores information about authors.
+3. **Books** - Stores information about books, including title, ISBN, and availability.
+4. **BookAuthors** - Handles the many-to-many relationship between books and authors.
+5. **Borrowings** - Handles the many-to-many relationship between members and books.
 
-A backend REST API to manage tasks, users, and projects using FastAPI and MySQL. All CRUD operations are implemented.
+## 🚀 Setup Instructions
 
----
+1. Ensure you have **MySQL** installed and running on your machine.
+2. Clone or download this repository.
+3. Open your preferred MySQL client (e.g., MySQL Workbench or command-line interface).
+4. Run the commands in the library_management sql file to create the database and tables, then insert sample data:
 
-## 🛠️ How to Set Up
-
-### Question 1: Importing Library Database
-
-1. Open MySQL Workbench or your preferred MySQL interface.
-2. Run the script in `onlyMysql/library_managementdb.sql` to create and populate the database.
-
-### Question 2: Running the Task Manager API
-
-Clone this repo
+## 🖼️ ERD (Entity-Relationship Diagram)  
+Here is the visual representation of the database structure:  
+![ERD DIAGRAM](lm_erd.png)
 
